@@ -1,0 +1,685 @@
+{
+  "candidate": "C:\\Users\\prakash.dodla\\Downloads\\Chandra_Prakash_Reddy_DevOps_Portfolio_Ready\\aws-devops-portfolio\\standalone-v6\\index.html",
+  "original": "C:\\Users\\prakash.dodla\\Downloads\\Chandra_Prakash_Reddy_DevOps_Portfolio_Ready\\aws-devops-portfolio\\standalone-v6\\original.html",
+  "startedAt": "2026-10-08T13:23:13.021Z",
+  "browser": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+  "offline": true,
+  "checks": [
+    {
+      "name": "Original embedded portrait, images and PDF bytes are preserved",
+      "passed": true,
+      "milliseconds": 790,
+      "details": {
+        "uniqueEmbeddedAssets": 4,
+        "candidateBytes": 3579477
+      }
+    },
+    {
+      "name": "Standalone hero and all five widgets mount offline",
+      "passed": true,
+      "milliseconds": 157,
+      "details": {
+        "headline": "Engineering Reliable Cloud Infrastructure at Scale.",
+        "caseStudies": 5
+      }
+    },
+    {
+      "name": "GitHub profile links have been removed",
+      "passed": true,
+      "milliseconds": 51
+    },
+    {
+      "name": "Legacy theme toggle persists both choices across reloads",
+      "passed": true,
+      "milliseconds": 2412
+    },
+    {
+      "name": "Preserved project tabs, six-step inspection and reduced-motion tour work",
+      "passed": true,
+      "milliseconds": 2263,
+      "details": [
+        {
+          "id": "usbank",
+          "title": "Enterprise cloud migration & DevOps delivery",
+          "problem": "Enterprise OpenLiberty and Keycloak applications needed repeatable AWS environments for migration.",
+          "outcome": "45% less infrastructure provisioning effort and 35% lower incident recovery time."
+        },
+        {
+          "id": "fiberz",
+          "title": "Faster releases for telecom BSS applications",
+          "problem": "Telecom BSS applications required faster releases and earlier infrastructure issue detection.",
+          "outcome": "50% lower manual deployment effort and 30% faster issue detection."
+        },
+        {
+          "id": "bom",
+          "title": "Cross-platform release automation",
+          "problem": "Banking releases spanned Windows inputs, Linux builds and secure delivery destinations.",
+          "outcome": "35% fewer manual release steps and 40% less manual operational effort."
+        },
+        {
+          "id": "kalamandir",
+          "title": "Cloud-native delivery with cost discipline",
+          "problem": "Retail cloud workloads required consistent delivery, secure availability and better spend visibility.",
+          "outcome": "18% reduction in monthly AWS spend through rightsizing and cost optimization."
+        },
+        {
+          "id": "oup",
+          "title": "AWS foundations and microservice onboarding",
+          "problem": "Publishing microservices needed repeatable onboarding and consistent AWS networking.",
+          "outcome": "60% less repetitive manual microservice onboarding effort."
+        }
+      ]
+    },
+    {
+      "name": "375px mobile navigation and resume remain keyboard reachable",
+      "passed": true,
+      "milliseconds": 784,
+      "details": {
+        "navigationLinks": 0,
+        "resume": "Visible hero Download CV link"
+      }
+    },
+    {
+      "name": "Reduced-motion Terraform build reveals and explains all seven stages",
+      "passed": true,
+      "milliseconds": 672
+    },
+    {
+      "name": "Jenkins manual pipeline, unhealthy rollout and recovery complete",
+      "passed": true,
+      "milliseconds": 1045
+    },
+    {
+      "name": "CloudWatch incident investigation, recovery and reset work",
+      "passed": true,
+      "milliseconds": 529
+    },
+    {
+      "name": "Environment selection, resource inspection, zoom and fit work",
+      "passed": true,
+      "milliseconds": 482
+    },
+    {
+      "name": "All twelve migration steps expose their engineering details",
+      "passed": true,
+      "milliseconds": 901
+    },
+    {
+      "name": "Skill search filters results and recovers from an empty result",
+      "passed": true,
+      "milliseconds": 161
+    },
+    {
+      "name": "Playground tabs support keyboard selection and local walkthrough links",
+      "passed": true,
+      "milliseconds": 632
+    },
+    {
+      "name": "dark original hero accessibility baseline is recorded",
+      "passed": true,
+      "milliseconds": 1861,
+      "details": {
+        "seriousOrCritical": 0
+      }
+    },
+    {
+      "name": "dark layout fits 320px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 406,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#platform",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        }
+      ]
+    },
+    {
+      "name": "dark layout fits 375px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 355,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#platform",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        }
+      ]
+    },
+    {
+      "name": "dark 375px hero screenshot is saved",
+      "passed": true,
+      "milliseconds": 80
+    },
+    {
+      "name": "dark layout fits 768px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 484,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#platform",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        }
+      ]
+    },
+    {
+      "name": "dark layout fits 1440px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 487,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#platform",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        }
+      ]
+    },
+    {
+      "name": "dark 1440px hero screenshot is saved",
+      "passed": true,
+      "milliseconds": 375
+    },
+    {
+      "name": "dark hero has no serious or critical accessibility violations",
+      "passed": true,
+      "milliseconds": 2131
+    },
+    {
+      "name": "dark widgets have no serious or critical accessibility violations",
+      "passed": true,
+      "milliseconds": 4867
+    },
+    {
+      "name": "dark selected widget screenshots are saved",
+      "passed": true,
+      "milliseconds": 768
+    },
+    {
+      "name": "light original hero accessibility baseline is recorded",
+      "passed": true,
+      "milliseconds": 2597,
+      "details": {
+        "seriousOrCritical": 0
+      }
+    },
+    {
+      "name": "light layout fits 320px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 541,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#platform",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 320,
+          "pageWidth": 320
+        }
+      ]
+    },
+    {
+      "name": "light layout fits 375px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 579,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#platform",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 375,
+          "pageWidth": 375
+        }
+      ]
+    },
+    {
+      "name": "light 375px hero screenshot is saved",
+      "passed": true,
+      "milliseconds": 78
+    },
+    {
+      "name": "light layout fits 768px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 471,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#platform",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 768,
+          "pageWidth": 768
+        }
+      ]
+    },
+    {
+      "name": "light layout fits 1440px without horizontal document overflow",
+      "passed": true,
+      "milliseconds": 432,
+      "details": [
+        {
+          "selector": ".hero",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#platform",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#terraform-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#environment-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#jenkins-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#observability-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        },
+        {
+          "selector": "#migration-case-study",
+          "viewport": 1440,
+          "pageWidth": 1440
+        }
+      ]
+    },
+    {
+      "name": "light 1440px hero screenshot is saved",
+      "passed": true,
+      "milliseconds": 258
+    },
+    {
+      "name": "light hero has no serious or critical accessibility violations",
+      "passed": true,
+      "milliseconds": 1625
+    },
+    {
+      "name": "light widgets have no serious or critical accessibility violations",
+      "passed": true,
+      "milliseconds": 5057
+    },
+    {
+      "name": "light selected widget screenshots are saved",
+      "passed": true,
+      "milliseconds": 667
+    },
+    {
+      "name": "Normal-motion legacy architecture responds to the cursor and respects pause",
+      "passed": true,
+      "milliseconds": 3973,
+      "details": {
+        "first": {
+          "pointerX": "55.15%",
+          "pointerY": "35.22%"
+        },
+        "second": {
+          "pointerX": "82.54%",
+          "pointerY": "62.01%"
+        },
+        "paused": {
+          "pointerX": "82.54%",
+          "pointerY": "62.01%"
+        }
+      }
+    },
+    {
+      "name": "Candidate produces no uncaught browser errors",
+      "passed": true,
+      "milliseconds": 0
+    },
+    {
+      "name": "Candidate needs no external network or local asset files",
+      "passed": true,
+      "milliseconds": 1
+    }
+  ],
+  "assets": [
+    {
+      "mimeType": "image/svg+xml",
+      "characters": 239,
+      "sha256": "a6ffea27b77ab2380db5fce669097a7610277351d1914b24e4a4044634337e7d",
+      "preserved": true
+    },
+    {
+      "mimeType": "image/png",
+      "characters": 124798,
+      "sha256": "4b72592f11e6d65991d29c9683edeb89fb1d7a0bf6395e2196db00f1cf91872c",
+      "preserved": true
+    },
+    {
+      "mimeType": "application/pdf",
+      "characters": 8836,
+      "sha256": "1b5c517117be5346abc7e283a7463f2492286b237604230bcaa9e933b29fd7a6",
+      "preserved": true
+    },
+    {
+      "mimeType": "image/png",
+      "characters": 2714110,
+      "sha256": "15d88c27714b85cb71e28502de0dcf017a10aed5b529347733f41b6833c1e772",
+      "preserved": true
+    }
+  ],
+  "runtimeErrors": [],
+  "consoleErrors": [],
+  "externalRequests": [],
+  "localDependencies": [],
+  "accessibility": [
+    {
+      "theme": "dark",
+      "scope": "original hero",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "scope": "hero",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "scope": "engineering widgets",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "scope": "original hero",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "scope": "hero",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    },
+    {
+      "theme": "light",
+      "scope": "engineering widgets",
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious"
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    "hero-dark-375.png",
+    "hero-dark-1440.png",
+    "terraform-dark-1440.png",
+    "jenkins-dark-1440.png",
+    "cloudwatch-dark-1440.png",
+    "hero-light-375.png",
+    "hero-light-1440.png",
+    "terraform-light-1440.png",
+    "jenkins-light-1440.png",
+    "cloudwatch-light-1440.png"
+  ],
+  "completedAt": "2026-10-08T13:24:00.541Z",
+  "passed": true
+}
