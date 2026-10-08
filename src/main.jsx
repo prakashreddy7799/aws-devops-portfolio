@@ -1,33 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { ArrowDown, ArrowDownRight, ArrowRight, ArrowUpRight, Cloud, Github, Linkedin, Mail, MapPin, Menu, X, ExternalLink, TerminalSquare, Layers3, GitBranch, ShieldCheck, Download, Boxes, Workflow, Check, Server, Database, RadioTower } from 'lucide-react';
-import { profile, metrics, skillGroups, projects, experience, certificationPlan } from './content';
+import { LazyMotion, MotionConfig } from 'motion/react';
+import App from './App';
+import { MotionPreferencesProvider } from './hooks/useMotionPreferences';
 import './styles.css';
+import './styles/site-enhancements.css';
+import { ThemeProvider } from './hooks/useTheme';
+import './styles/themes.css';
 
-const nav = [['About', '#about'], ['Expertise', '#expertise'], ['Projects', '#projects'], ['Experience', '#experience'], ['Contact', '#contact']];
-const groupIcons = { cloud: Cloud, blocks: Boxes, workflow: Workflow, shield: ShieldCheck };
-const emailReady = profile.email && !profile.email.includes('example.com');
-const githubReady = profile.github && !profile.github.includes('YOUR_USERNAME');
+const loadMotionFeatures = () => import('./motionFeatures').then((module) => module.default);
 
-function Brand() { return <a className="brand" href="#home" aria-label="Back to top"><span className="brand-mark">P<span>.</span></span><span className="brand-word">PRAKASH<span className="muted-word"> / DEVOPS</span></span></a> }
-function SectionHeading({ eyebrow, title, detail }) { return <div className="section-heading"><div><p className="eyebrow"><span className="tiny-line"/>{eyebrow}</p><h2>{title}</h2></div>{detail && <p className="section-detail">{detail}</p>}</div> }
-function Pill({ children }) { return <span className="pill">{children}</span> }
-function App() {
- const [menuOpen, setMenuOpen] = useState(false);
- return <>
-  <header className="site-header"><div className="container header-inner"><Brand/><nav className={'navigation '+(menuOpen?'opened':'')} aria-label="Main navigation">{nav.map(([label,href])=><a key={href} onClick={()=>setMenuOpen(false)} href={href}>{label}</a>)}</nav><div className="header-right"><a className="header-cta" href="#contact">Let's connect <ArrowUpRight size={15}/></a><button type="button" className="menu-toggle" aria-label={menuOpen?'Close menu':'Open menu'} aria-expanded={menuOpen} onClick={()=>setMenuOpen(!menuOpen)}>{menuOpen?<X/>:<Menu/>}</button></div></div></header>
-  <main>
-   <section id="home" className="hero container"><div className="hero-copy"><div className="availability"><span className="status-dot"/>{profile.availability}</div><p className="hero-kicker">HELLO, I'M {profile.name.toUpperCase()}</p><h1>Building <span>reliable</span><br/>cloud systems<span className="period">.</span></h1><p className="hero-subtitle">{profile.heroLine}</p><p className="hero-description">{profile.intro}</p><div className="hero-actions"><a className="button primary" href="#projects">Explore my work <ArrowUpRight size={18}/></a><a className="button secondary" href={profile.resume} download>Download résumé <Download size={17}/></a></div><div className="hero-social"><span>FIND ME ON</span>{githubReady&&<a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={19}/></a>}<a href={profile.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={19}/></a>}{emailReady&&<a href={'mailto:'+profile.email} aria-label="Email"><Mail size={19}/></a>}</div></div>
-   <div className="hero-visual" aria-label="Cloud infrastructure illustration"><div className="visual-grid"/><div className="orbit orbit-one"/><div className="orbit orbit-two"/><div className="cloud-core"><Cloud size={47} strokeWidth={1.5}/><span>AWS CLOUD</span></div><div className="float-node node-a"><Server size={17}/><span>COMPUTE</span></div><div className="float-node node-b"><GitBranch size={17}/><span>PIPELINES</span></div><div className="float-node node-c"><Database size={17}/><span>DATA</span></div><div className="float-node node-d"><RadioTower size={17}/><span>MONITORING</span></div><div className="hero-terminal"><div className="terminal-top"><span className="terminal-dots"><i/><i/><i/></span><span>deploy.sh</span><span>● LIVE</span></div><div className="terminal-lines"><span><b>$</b> terraform apply</span><span className="terminal-light">✓ Infrastructure provisioned</span><span><b>$</b> kubectl rollout status</span><span className="terminal-light">✓ Deployment healthy</span><span className="terminal-cursor">▋</span></div></div></div><a href="#about" className="scroll-hint">SCROLL TO EXPLORE <ArrowDown size={15}/></a></section>
-   <section className="metrics-band"><div className="container metrics-grid">{metrics.map(m=><div key={m.label} className="metric"><strong>{m.value}</strong><span>{m.label}</span></div>)}</div></section>
-   <section id="about" className="section container about-section"><SectionHeading eyebrow="01 / ABOUT ME" title={<>Engineering with<br/><em>purpose.</em></>} detail="I work where cloud architecture, automation, and operational excellence meet."/><div className="about-grid"><div className="about-panel"><span className="panel-label">MY APPROACH</span><p>{profile.about}</p><div className="location-row"><MapPin size={18}/>{profile.location}</div></div><div className="principles"><div><span>01</span><div><h3>Automate the repeatable</h3><p>Make deployments and infrastructure predictable, maintainable, and version controlled.</p></div></div><div><span>02</span><div><h3>Design for resilience</h3><p>Prefer observable systems, secure defaults, and recoverable operations.</p></div></div><div><span>03</span><div><h3>Deliver continuously</h3><p>Connect software changes to reliable releases through practical CI/CD.</p></div></div></div></div></section>
-   <section id="expertise" className="section section-tinted"><div className="container"><SectionHeading eyebrow="02 / TECHNICAL EXPERTISE" title={<>Tools of <em>the trade.</em></>} detail="A cloud-native toolkit spanning infrastructure, delivery, observability, and operations."/><div className="skills-grid">{skillGroups.map(g=>{const Icon=groupIcons[g.icon];return <article key={g.title} className="skill-card"><div className="skill-icon"><Icon size={23}/></div><h3>{g.title}</h3><div className="tags">{g.items.map(item=><Pill key={item}>{item}</Pill>)}</div></article>})}</div></div></section>
-   <section id="projects" className="section container"><SectionHeading eyebrow="03 / SELECTED WORK" title={<>Ideas into <em>infrastructure.</em></>} detail="Selected professional work, summarized from my resume. Client source code and private infrastructure are not public."/><div className="projects-grid">{projects.map(p=><article key={p.number} className="project-card"><div className="project-top"><span className="project-number">{p.number} / {p.category}</span>{p.link?<a href={p.link} target="_blank" rel="noreferrer" aria-label={'Open '+p.title}><ArrowUpRight size={20}/></a>:<span className="project-corner"><ArrowUpRight size={19}/></span>}</div><div className="project-symbol"><Layers3 size={37} strokeWidth={1.2}/><div className="circuit circuit-one"/><div className="circuit circuit-two"/></div><div className="project-body"><span className="project-type">{p.type}</span><h3>{p.title}</h3><p>{p.description}</p><div className="tags">{p.stack.map(s=><Pill key={s}>{s}</Pill>)}</div></div></article>)}</div><p className="projects-note">Professional project summaries; confidential client repositories and infrastructure details are not shared. <a href={profile.github} target="_blank" rel="noreferrer">Explore my public GitHub repositories ↗</a></p></section>
-   <section id="experience" className="section section-tinted"><div className="container"><SectionHeading eyebrow="04 / EXPERIENCE" title={<>The work <em>behind the systems.</em></>} detail="An overview of the responsibilities that shape my engineering approach."/><div className="timeline">{experience.map(e=><article className="timeline-item" key={e.role}><span className="timeline-dot"/><div className="timeline-period">{e.period}</div><div><h3>{e.role}</h3><p className="timeline-org">{e.organization}</p><p>{e.details}</p></div></article>)}</div><div className="certifications"><div><p className="eyebrow">LEARNING ROADMAP</p><h3>What's next</h3></div><div className="cert-list">{certificationPlan.map(c=><div key={c.title}><span>{c.title}</span><span className="planned">{c.state}</span></div>)}</div></div></div></section>
-   <section id="contact" className="section contact-section container"><div className="contact-glow"/><p className="eyebrow"><span className="tiny-line"/>05 / GET IN TOUCH</p><h2>Let's build something<br/><em>remarkable.</em></h2><p>Interested in cloud engineering, DevOps, or collaborating on reliable infrastructure? I'd be glad to connect.</p><div className="contact-actions">{emailReady?<a className="button primary" href={'mailto:'+profile.email}>Send an email <ArrowUpRight size={18}/></a>:<span className="button disabled-note">Add your email in src/content.js</span>}<a className="button secondary" href={profile.linkedin} target="_blank" rel="noreferrer">View LinkedIn <ArrowUpRight size={18}/></a></div></section>
-  </main>
-  <footer className="footer"><div className="container footer-inner"><Brand/><span>© {new Date().getFullYear()} {profile.name}. Built with React · Deployed on Netlify.</span><a href="#home">Back to top ↑</a></div></footer>
- </>;
-}
-
-createRoot(document.getElementById('root')).render(<React.StrictMode><App/></React.StrictMode>);
+createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <LazyMotion features={loadMotionFeatures}>
+      <MotionConfig reducedMotion="user">
+        <ThemeProvider>
+          <MotionPreferencesProvider>
+            <App />
+          </MotionPreferencesProvider>
+        </ThemeProvider>
+      </MotionConfig>
+    </LazyMotion>
+  </React.StrictMode>,
+);

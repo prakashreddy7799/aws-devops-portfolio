@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs><radialGradient id="halo"><stop stop-color="#174579" stop-opacity=".55"/><stop offset="1" stop-color="#050505" stop-opacity="0"/></radialGradient><linearGradient id="blue"><stop stop-color="#99e2ff"/><stop offset=".6" stop-color="#2997ff"/><stop offset="1" stop-color="#8076f4"/></linearGradient></defs>
+  <rect width="1200" height="630" fill="#050505"/><ellipse cx="970" cy="310" rx="400" ry="340" fill="url(#halo)"/>
+  <g fill="none" stroke="#5185b8" stroke-opacity=".35"><circle cx="975" cy="300" r="160"/><ellipse cx="975" cy="300" rx="200" ry="95" transform="rotate(-30 975 300)"/><ellipse cx="975" cy="300" rx="200" ry="95" transform="rotate(30 975 300)"/><circle cx="975" cy="300" r="72" fill="#0d2039" stroke="#5dafe6" stroke-opacity=".6"/></g>
+  <g fill="#112740" stroke="#47779d"><rect x="949" y="113" width="52" height="52" rx="14"/><rect x="790" y="315" width="52" height="52" rx="14"/><rect x="1110" y="315" width="52" height="52" rx="14"/></g>
+  <path d="M945 297c-1-13 16-19 24-13 5-21 35-20 39 2 24-2 25 33 3 33h-60c-14 0-17-19-6-22Z" fill="none" stroke="#96d7ff" stroke-width="2"/>
+  <circle cx="974" cy="139" r="5" fill="#7ddaff"/><circle cx="816" cy="341" r="5" fill="#7ddaff"/><circle cx="1136" cy="341" r="5" fill="#7ddaff"/>
+  <g font-family="Segoe UI,Arial,sans-serif"><text x="80" y="94" fill="#d1d9e8" font-size="18" letter-spacing="3">CHANDRA PRAKASH REDDY</text><text x="76" y="230" fill="#f5f5f7" font-size="64" font-weight="600" letter-spacing="-3">Engineering Reliable</text><text x="76" y="318" fill="#f5f5f7" font-size="64" font-weight="600" letter-spacing="-3">Cloud Infrastructure</text><text x="76" y="406" fill="url(#blue)" font-size="76" font-weight="600" letter-spacing="-4">at Scale.</text><text x="80" y="492" fill="#a0adc0" font-size="19">Senior AWS DevOps &amp; Cloud Engineer · 6+ years</text><text x="80" y="552" fill="#76b7f6" font-size="14" letter-spacing="2">AWS / TERRAFORM / KUBERNETES / CI/CD</text></g>
+  <path d="M80 585h1040" stroke="#ffffff18"/>
+</svg>

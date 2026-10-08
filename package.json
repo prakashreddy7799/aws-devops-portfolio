@@ -6,16 +6,25 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0"
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "format": "prettier --write src tests scripts index.html playwright.config.js"
   },
   "dependencies": {
+    "lucide-react": "^0.468.0",
+    "motion": "^14.0.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "lucide-react": "^0.468.0"
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.64.0",
     "@vitejs/plugin-react": "^4.7.0",
+    "prettier": "^3.9.9",
     "vite": "^6.3.5"
   },
-  "engines": {"node": ">=20.19.0"}
+  "engines": {
+    "node": ">=20.19.0"
+  }
 }

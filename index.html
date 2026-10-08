@@ -2,17 +2,83 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (() => {
+        let theme;
+        try {
+          theme = localStorage.getItem('portfolio-theme');
+        } catch {}
+        if (theme !== 'dark' && theme !== 'light')
+          theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#080d18" />
-    <meta name="description" content="AWS DevOps and Cloud Engineering portfolio featuring infrastructure as code, CI/CD, containers, observability, and cloud architecture projects." />
-    <title>Prakash Reddy | AWS DevOps Engineer</title>
+    <meta name="theme-color" content="#050505" />
+    <meta
+      name="description"
+      content="Chandra Prakash Reddy — Senior DevOps Engineer, Cloud Engineer, and Platform Engineer in Hyderabad with 6+ years of experience in AWS, Terraform, Kubernetes, CI/CD, cloud migration, and observability."
+    />
+    <title>
+      Chandra Prakash Reddy | Senior DevOps Engineer | Cloud Engineer | Platform Engineer
+    </title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chandra Prakash Reddy" />
+    <meta
+      property="og:title"
+      content="Chandra Prakash Reddy | Senior DevOps Engineer | Cloud Engineer | Platform Engineer"
+    />
+    <meta
+      property="og:description"
+      content="6+ years building, automating, and operating scalable AWS infrastructure. Explore professional work in Terraform, Kubernetes, CI/CD, and cloud engineering."
+    />
+    <meta property="og:image" content="/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Chandra Prakash Reddy — Engineering Reliable Cloud Infrastructure at Scale. AWS DevOps, Terraform, Kubernetes, and CI/CD."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Chandra Prakash Reddy | Senior DevOps Engineer | Cloud Engineer | Platform Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Engineering Reliable Cloud Infrastructure at Scale. Explore interactive AWS infrastructure, automation, and reliability case studies."
+    />
+    <meta name="twitter:image" content="/social-card.png" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Chandra Prakash Reddy",
+        "jobTitle": "Senior DevOps Engineer",
+        "email": "mailto:dodlaprakashreddy@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "addressCountry": "IN"
+        },
+        "sameAs": ["https://www.linkedin.com/in/chandra-prakash-reddy-921260218/"]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
+    <noscript
+      ><p>
+        Chandra Prakash Reddy — Senior DevOps Engineer | Cloud Engineer | Platform Engineer with 6+
+        years of experience.
+        <a href="mailto:dodlaprakashreddy@gmail.com">Get in touch</a> or
+        <a href="/resume.pdf">download the resume</a>. Enable JavaScript to explore the interactive
+        portfolio.
+      </p></noscript
+    >
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
